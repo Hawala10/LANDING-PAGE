@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style the top nav Bar*/
+
+.topnavbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(49 159, 243);
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0px 0px 4px 0px;
+    padding-left: 70%;
+}
+
+.topnavbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.topnavbar a:hover {
+    background-color: rgb(35, 104, 165);
+    color: whitesmoke;
+}
+
+/* style the top barner*/
+
+.grid-container {
+    display: grid;
+    align-content: top;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: rgba(255, 255, 0, 0.508);
+    padding: 1px;
+    margin: 1px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.item1-2 {
+    grid-column: 2/6;
+}
+
+/* style the Home*/
+
+.haederhome {
+    text-align: center;
+}
+.grid-container2 {
+    display: grid;
+    align-content: top;
+    grid-template-columns: auto;
+    gap: 10px;
+    background-color: white;
+    padding: 1px;
+}
+
+.grid-container2 > div {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+/* style the About*/
+
+.grid-container3 {
+    display: grid;
+    align-content: top;
+    grid-template-columns: 60% auto;
+    gap: 10px;
+    background-color: white;
+    
+}
+.grid-container3 > div {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+
+}
+
+.traders {
+    height: 100%;
+    width: 100%;
+}
+
+.hea32 {
+    color: grey;
+    padding: 15%;
+}
+/* style the Services*/
+
+.grid-container4 {
+    display: grid;
+    align-content: top;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: white;
+
+}
+
+.grid-container4 > div {
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+
+.topdivservices {
+    background-color: #2196f3;
+    height: 50px;
+}
+.Services1 {
+    margin-left: 40%;
+    color: white;
+}
+
+.h3gid4 {
+    color: gray;
+}
+
+.imgsgrid4 {
+    width: 90%;
+    height: 50%;
+}
+
+.grid4p {
+    color: grey;
+    text-align: left;
+    padding-left: 40%;
+}
+
+/* style the Contact*/
+
+.grid-container5 {
+    display: grid;
+    text-align: top;
+    grid-template-columns: 45% 45%;
+    gap: 9%;
+    background-color: white;
+}
+
+.grid-container5 > div {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+/* style the form*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize:vertical;
+
+}
+
+input[type=submit] {
+    background-color: #044460;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: green;
+}
+.Container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* style the form*/
+
+.grid-container6 {
+    display: grid;
+    align-content: top;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+    background-color: #2196f3;
+    color: white;
+
+}
+
+.grid-container6 > div {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+
+}
+
+.linkscont6 {
+    display: block;
+    text-align: left;
+}
+.footerlinks {
+    padding-left: 130px;
+}
+
+.footerlinks a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 769px) {
+    .topnavbar {
+        padding-left: 0px;
+    }
+    .topnavbar a{
+        float: none;
+        text-align: justify;
+        padding: 20px 20px;
+        font-size: 30px;
+    }
+    .topnavbar a:hover {
+        padding: 20px 60px;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+    }
+    .item1-2 {
+        grid-column: 1/2;
+    }
+    .haederhome {
+        margin-left: 1%;
+        margin-right: 1%;
+        text-align: center;
+    }
+    .grid-container2 {
+        grid-template-columns: auto;
+    }
+    .grid-container3 {
+        grid-template-columns: auto;
+    }
+    .Services1 {
+        margin-left: 25%;
+    }
+    .grid-container4 {
+        grid-template-columns: auto;
+    }
+    .grid-container5 {
+        grid-template-columns: auto;
+    }
+    .Container {
+        width: 100%;
+        margin-bottom: 50%;
+    }
+    .grid-container6 {
+        grid-template-columns: auto;
+       
+    }
+    .footerlinks {
+        padding-left: 185px;
+    }
+}
+ 
